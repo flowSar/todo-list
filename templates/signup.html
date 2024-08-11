@@ -1,0 +1,37 @@
+{% extends "layout.html"%}
+{% block head %}
+    <title>Todo list</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/home.css') }}">
+    <script src="{{ url_for('static', filename='scripts/signup.js') }}" defer></script>
+{% endblock head%}
+{% block body %}
+    <h3 style="text-align: center;">Sign up</h3>
+    <div class="sign-ip-container">
+        <div class="input-container">
+            <span></span>
+            <div>
+                <p class="error-msg js-error-msg">please ensure both passowrd aren't dufferent</p>
+            </div>
+        </div>
+
+
+        <div class="input-container">
+            <div class="input-type">User Name</div>
+            <input class="user-name-input js-user-name-input" type="text" name="userName">
+        </div>
+
+        <div class="input-container">
+            <div class="input-type">Password</div>
+            <input class="js-singup-password-1" type="password" name="password">
+        </div>
+
+        <div class="input-container">
+            <div class="input-type">Password</div>
+            <input class="js-singup-password-2" type="password" name="password">
+        </div>
+        <div class="input-container">
+            <span></span>
+            <button class="signup-btn js-signup-btn" type="submit">signup</button>
+        </div>
+    </div>
+{% endblock %}

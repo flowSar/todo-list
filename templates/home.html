@@ -1,0 +1,28 @@
+{% extends "layout.html"%}
+{% block head %}
+    <title>Todo list</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/home.css') }}">
+    <script src="{{ url_for('static', filename='scripts/home.js') }}"></script>
+{% endblock head%}
+{% block body %}
+
+    <h1 style="text-align: center;">Log in</h1>
+    <div class="log-in-container">
+        <div class="input-container">
+            <div class="input-type">User Name</div>
+            <input class="js-log-in-username" name="userName" type="text">
+        </div>
+        <div class="input-container">
+            <div class="input-type">Password</div>
+            <input class="js-log-in-password" name="password", type="password">
+        </div>
+        <div class="input-container">
+            <span></span>
+            <button class="login-btn js-login-btn">Log in</button>
+        </div>
+        <form method="GET", action="/signup">
+            <button class="signup-btn-home">sign up</button>
+        </form>
+    </div>
+
+{% endblock %}

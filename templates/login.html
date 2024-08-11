@@ -1,0 +1,13 @@
+{% extends "layout.html"%}
+{% block head %}
+    <title>Log in</title>
+{% endblock head%}
+{% block body %}
+    {% if longin %}
+        <h1>you successful loged in "{{ userName }}"</h1>
+    {% else %}
+        <h1>failed to log in: please ensure you've entered the right username and password</h1>
+    {% endif %}
+
+
+{% endblock %}

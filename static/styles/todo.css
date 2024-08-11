@@ -1,0 +1,63 @@
+
+body {
+    padding: 30px
+}
+.add-dodo-container {
+    height: 30px;
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 40px;
+}
+.action {
+    flex: 3;
+}
+.action-date {
+    flex: 1;
+}
+
+.action-add-btn {
+    flex: 1;
+}
+
+
+.todo-container {
+    /* margin: 200px; */
+    border: 1px solid black;
+    height: 30px;
+}
+
+.todo-row-head ,
+.dodo-row{
+    display: flex;
+    align-items: center;
+
+}
+
+.tr-todo {
+    flex: 3;
+    background-color: aliceblue;
+    padding: 6px;
+    text-align: center;
+}
+.tr-action {
+    flex: 1;
+    background-color: rgb(160, 183, 202);
+    padding: 6px;
+    text-align: center;
+}
+.tr-date {
+    flex: 1;
+    padding: 6px;
+    text-align: center;
+}
+
+.dodo-row {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.delete-btn, .update-btn {
+    padding: 4px 10px 4px 10px;
+    border-radius: 6px;
+    border: none;
+}

@@ -1,0 +1,83 @@
+input {
+    padding: 12px;
+    width: 300px;
+}
+
+.form-lon-in {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.userName {
+    margin-left: 2px;
+}
+.password {
+    margin-left: 10px;
+}
+.log-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px;
+}
+.signup-btn-home {
+    width: 300px;
+    margin-left: 100px;
+    padding: 6px;
+}
+
+
+/* .signup-btn, */
+.login-btn{
+    width: 300px;
+    margin-left: auto;
+    padding: 6px;
+}
+
+.sign-ip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+}
+.signup-btn {
+    width: 300px;
+    padding: 6px;
+
+}
+
+.input-container {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    /* column-gap: 20px; */
+    justify-content: space-between;
+}
+
+/* .input-container {
+    display: flex;
+    align-items: center;
+} */
+
+/* .input-type {
+    width: 100px;
+} */
+
+
+/* .sign-btn-container {
+    flex: 1;
+} */
+
+.error-msg {
+    width: 300px;
+    margin-left: 30px;
+    text-align: center;
+    color: rgb(201, 45, 45);
+    padding:0px;
+    margin: 0px;
+    flex: 1;
+    text-align: center;
+    opacity: 0;
+}

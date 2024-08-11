@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/todo.css' ) }}"/>
+
+    <script src="{{ url_for('static', filename='scripts/todo.js') }}"></script>
+{% endblock head %}
+
+
+{% block body %}
+    <p class="js-username" style="display: none">{{ username }}</p>
+    <div class="add-dodo-container">
+        <input class="action js-task" type="text"/>
+        <input class="action-date js-task-date" type="date"/>
+        <button class="action-add-btn js-action-add-btn">add</button>
+    </div>
+
+    <div class="todo-container">
+        <div class="todo-row-head">
+            <div class="tr-todo">Todo</div>
+            <div class="tr-date">date</div>
+            <div class="tr-action">Action</div>
+        </div>
+        <div class="todo-rows">
+            <!-- <div class="dodo-row">
+                <div class="tr-todo">cock dinner and study english and work out and make launch and make breakdaft</div>
+                <div class="tr-date">12-08-2024</div>
+                <div class="tr-action">
+                    <button class="delete-btn js-delete-button">delete</button>
+                    <button class="update-btn">update</button>
+                </div>
+            </div> -->
+            <!-- <div class="dodo-row">
+                <div class="tr-todo">cock dinner and study english and work out and make launch and make breakdaft</div>
+                <div class="tr-date">12-08-2024</div>
+                <div class="tr-action">
+                    <button class="delete-btn js-delete-button">delete</button>
+                    <button class="update-btn">update</button>
+                </div>
+            </div> -->
+        </div>
+ 
+    </div>
+{% endblock body %}
